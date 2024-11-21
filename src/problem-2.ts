@@ -2,10 +2,10 @@ function removeDuplicates(arr: number[]): number[] {
   const uniqueArr: number[] = [];
 
   arr.forEach((num) => {
-    // if (!uniqueArr.includes(num)) {
-    //   uniqueArr.push(num);
-    // }
-    !uniqueArr.includes(num) && uniqueArr.push(num);
+    if (!uniqueArr.includes(num)) {
+      uniqueArr.push(num);
+    }
+    // !uniqueArr.includes(num) && uniqueArr.push(num);
   });
 
   return uniqueArr;
