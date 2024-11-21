@@ -3,6 +3,6 @@
 <!-- Run Code in console -->
 
 ```
-ts-node-dev --respawn --transpile-only problem-1.ts
+ts-node-dev --respawn --transpile-only src/problem-1.ts
 
 ```
