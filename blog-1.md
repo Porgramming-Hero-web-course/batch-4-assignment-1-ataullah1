@@ -7,16 +7,19 @@ TypeScript is a powerful, type-safe programming language for developers. One of 
 A Union Type is a feature in TypeScript that allows a variable to hold multiple types. For example, a variable could be either a string or a number. Often, data from APIs may come in different formats, and Union Types help in handling that data effectively.
 
 ```
-function resId(id: string | number): void {
+function resultId(id: string | number): void {
 if (typeof id === "string") {
-console.log(`ID is a string: ${id.toUpperCase()}`);
+console.log(`ID is a string: ${id}`);
 } else {
 console.log(`ID is a number: ${id}`);
 }
 }
 
-resId("abc123"); // Output: ID is a string: ABC123
-resId(101); // Output: ID is a number: 101
+resultId("Hello_Typescript");
+// Output: ID is a string: Hello_Typescript
+
+resultId(13131313);
+// Output: ID is a number: 13131313
 ```
 
 ## Intersection Type
@@ -36,8 +39,8 @@ isAdmin: boolean;
 type AdminUser = User & Admin;
 
 const adminUser: AdminUser = {
-name: "Alice",
-email: "alice@example.com",
+name: "ataullah",
+email: "ataullahm100@gmail.com",
 isAdmin: true,
 };
 
